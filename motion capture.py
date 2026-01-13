@@ -41,6 +41,8 @@ while True:
                       thickness = 3)
     cv2.imshow(winname = 'Final', mat = curr_frame)
     cv2.imshow(winname = '2', mat = dilate)
+    cv2.imshow(winname = '3', mat = threshold)
+    cv2.imshow(winname = '4', mat = diff)
     prev_gray = curr_gray.copy()
     if cv2.waitKey(30) & 0xFF == 27: break
 cap.release()
